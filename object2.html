@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>object practice2</title>
+</head>
+<body>
+<script tyle="text/javascript">
+	//can declare a function inside an object
+	var grades = {
+		'list' : {'egoing' : 10, 'k8805' : 8, 'sorialgi' : 80},
+		'show' : function(){
+			for(var name in this.list){
+				console.log(name, this.list[name]);
+			}
+			//this : variable tha points to the object to which the function belongs
+		}
+	}
+	grades.show();
+</script>
+</body>
+</html>
